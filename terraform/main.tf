@@ -15,7 +15,7 @@ resource "atlas_artifact" "haproxy" {
 }
 
 resource "aws_instance" "web" {
-  count = 5
+  count = 2
 
   // Pull the AMI id from the Atlas registry - this is the fully-compiled
   // artifact that has apache, consul, and consul-template already installed.
