@@ -118,7 +118,7 @@ resource "aws_route_table_association" "terraform-tutorial" {
 // group is intentionally insecure for the purposes of this tutorial. You should
 // only open required ports in a production environment.
 resource "aws_security_group" "terraform-tutorial" {
-  name   = "terraform-tutorial-web"
+  name   = "capgemini-web"
   vpc_id = "${aws_vpc.terraform-tutorial.id}"
 
   ingress {
